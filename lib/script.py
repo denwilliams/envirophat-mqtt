@@ -10,4 +10,4 @@ pressure = weather.pressure()
 
 tmp = weather.temperature()
 
-print "{ \"temperature\": " + temperature + ", \"light\": "+light+", \"pressure\": "+pressure+" }"
+print "{ \"temperature\": " + str(temperature) + ", \"light\": " + str(light) + ", \"pressure\": " + str(pressure) + " }"
