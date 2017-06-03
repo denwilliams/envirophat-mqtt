@@ -5,6 +5,15 @@ Calibrates the temperature reading for variance caused by heat from the CPU of t
 
 A factor of 1.2 works well for me, but may vary depending on case and environment.
 
+## Running
+
+```
+sudo npm i -g envirophat-mqtt
+envirophat-mqtt
+```
+
+Use PM2 or similar to run on startup.
+
 ## Configuration
 
 Create a config file at `/etc/envirophatmqtt/config.yml`
