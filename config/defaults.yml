@@ -3,3 +3,5 @@
 mqtt:
   host: localhost
   topic: envirophat/sensor
+temperature:
+  factor: 1.3
