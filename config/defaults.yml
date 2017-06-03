@@ -4,6 +4,6 @@ mqtt:
   host: localhost
   topic: envirophat/sensor
 temperature:
-  factor: 1.3
+  factor: 1.2
 interval:
-  duration: 10000
+  duration: 60000
