@@ -5,3 +5,5 @@ mqtt:
   topic: envirophat/sensor
 temperature:
   factor: 1.3
+interval:
+  duration: 10000
