@@ -1,13 +1,36 @@
 # envirophat-mqtt
 Publish sensor updates from Enviro pHat to MQTT
 
-# Pre-requisites
+Calibrates the temperature reading for variance caused by heat from the CPU of the Raspberry Pi and smooths the data using a moving average.
 
-1. Node js
-2. Python
-3. Pimoroni libs: `curl https://get.pimoroni.com/envirophat | bash`
+A factor of 1.2 works well for me, but may vary depending on case and environment.
 
-# Why Node js?
+## Configuration
+
+Create a config file at `/etc/envirophatmqtt/config.yml`
+
+Check the available settings and defaults in `config/defaults.yml`.
+
+Example:
+
+```yml
+---
+
+mqtt:
+  host: '192.168.0.123'
+  topic: sensor/loune/input
+temperature:
+  factor: 1.2
+interval:
+  duration: 60000
+```
+
+## Pre-requisites
+
+1. Pimoroni libs: `curl https://get.pimoroni.com/envirophat | bash`
+2. Node js
+
+## Why Node js?
 
 Selfish reason: Because all my existing home automation runs on Node js managed with PM2.
 
