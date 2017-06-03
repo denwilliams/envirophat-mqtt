@@ -1,7 +1,7 @@
 {
   "name": "envirophat-mqtt",
   "description": "Publish sensor updates from Enviro pHat to MQTT",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
