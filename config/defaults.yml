@@ -2,4 +2,4 @@
 
 mqtt:
   host: localhost
-  base_topic: envirophat/
+  topic: envirophat/sensor
